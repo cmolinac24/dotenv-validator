@@ -42,7 +42,7 @@ class EnvironmentCollection
     }
 
     /**
-     * @return Environment[]
+     * @return array<string, Environment>
      */
     public function getEnvironments(): array
     {

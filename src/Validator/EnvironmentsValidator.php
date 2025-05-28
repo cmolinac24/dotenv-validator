@@ -53,6 +53,7 @@ class EnvironmentsValidator
 
     private function hasErrors(array $environmentsDiff): bool
     {
+        /** @var array $diffs */
         foreach ($environmentsDiff as $diffs) {
             if (0 < count($diffs)) {
                 return true;
@@ -66,6 +67,10 @@ class EnvironmentsValidator
     {
         $this->output->error('Error');
         $this->output->section('You must add the following variables:');
+        /**
+         * @var string $name
+         * @var string[] $missedVars
+         */
         foreach ($environmentsDiff as $name => $missedVars) {
             $this->output->table(
                 [$name],

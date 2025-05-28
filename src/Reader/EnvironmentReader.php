@@ -36,7 +36,7 @@ class EnvironmentReader
                 $environments[] = new Environment($envName, $envFilePath);
             }
         } catch (\JsonException $exception) {
-            throw InvalidConfigurationException::fromFormat($configFile);
+            throw InvalidConfigurationException::fromFormat($configFile, $exception);
         }
 
         return EnvironmentCollection::createFrom($environments ?? []);

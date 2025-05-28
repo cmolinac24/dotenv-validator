@@ -9,8 +9,8 @@ use Throwable;
 
 final class FileNotFoundException extends Exception
 {
-    public static function fromLocation(string $location, string $reason = '', Throwable $previous = null): self
+    public static function fromLocation(string $location, string $reason): self
     {
-        return  new self(rtrim("Unable to read file from location: {$location}. {$reason}"), 0, $previous);
+        return  new self(rtrim("Unable to read file from location: {$location}. {$reason}"), 0, null);
     }
 }
