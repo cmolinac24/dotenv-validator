@@ -1,13 +1,13 @@
 {
-  "name": "impmurciego/dotenv-validator",
+  "name": "cmolinac24/dotenv-validator",
   "type": "library",
   "description": "Validate Dotenv files",
   "keywords": ["Dotenv", "Validator"],
   "license": "MIT",
   "authors": [
     {
-      "name": "Inés Perez",
-      "email": "impmurciego@gmail.com"
+      "name": "Carlos Molina",
+      "email": "cmolina@check24.es"
     }
   ],
   "require": {
